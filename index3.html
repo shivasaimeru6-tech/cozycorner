@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cozy Corner Cafe</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+body{
+background:#fffaf4;
+color:#333;
+line-height:1.6;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#f3e5d0;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav h1{
+color:#5b3a29;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:#5b3a29;
+font-weight:500;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+background:url("https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero-content{
+background:rgba(0,0,0,0.45);
+padding:40px;
+border-radius:10px;
+}
+
+.hero h2{
+font-size:48px;
+}
+
+.hero p{
+margin-top:10px;
+font-size:18px;
+}
+
+.hero-buttons{
+margin-top:20px;
+}
+
+.btn{
+padding:12px 25px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+margin:5px;
+font-size:16px;
+}
+
+.primary{
+background:#d07a37;
+color:white;
+}
+
+.secondary{
+background:white;
+color:#333;
+}
+
+/* SECTIONS */
+
+section{
+padding:70px 10%;
+text-align:center;
+}
+
+h2{
+margin-bottom:20px;
+color:#5b3a29;
+}
+
+/* ABOUT */
+
+.about{
+background:#fff;
+}
+
+/* MENU */
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.menu-item{
+background:#f8f1e7;
+padding:25px;
+border-radius:12px;
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+/* REVIEWS */
+
+.reviews{
+background:#f8f1e7;
+}
+
+.review{
+max-width:500px;
+margin:20px auto;
+}
+
+/* LOCATION */
+
+iframe{
+width:100%;
+height:350px;
+border:none;
+border-radius:10px;
+margin-top:20px;
+}
+
+/* CONTACT */
+
+.contact-buttons{
+margin-top:20px;
+}
+
+.contact-buttons button{
+margin:10px;
+}
+
+/* ORDER */
+
+.order-buttons a{
+display:inline-block;
+margin:10px;
+padding:12px 25px;
+background:#d07a37;
+color:white;
+border-radius:30px;
+text-decoration:none;
+}
+
+/* FOOTER */
+
+footer{
+background:#5b3a29;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
+}
+
+.social{
+margin-top:10px;
+}
+
+.social a{
+margin:0 10px;
+color:white;
+text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+<h1>Cozy Corner Cafe</h1>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h2>Cozy Corner Cafe</h2>
+
+<p>Your New Favorite Hangout in Hyderabad</p>
+
+<p>Delicious continental food, hot and cold coffees, and irresistible desserts.</p>
+
+<div class="hero-buttons">
+<button class="btn primary">View Menu</button>
+<button class="btn secondary">Reserve Table</button>
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="about">
+
+<h2>About Us</h2>
+
+<p>
+Welcome to Cozy Corner Cafe – your new favorite hangout in town.  
+We specialize in delicious continental food, a variety of hot and cold coffees,
+and irresistible desserts like cheesecakes and pastries.
+
+Enjoy great ambience, friendly service and weekend live music.
+</p>
+
+</section>
+
+<!-- MENU -->
+
+<section id="menu">
+
+<h2>Our Menu</h2>
+
+<div class="menu-grid">
+
+<div class="menu-item">
+<h3>Coffee & Beverages</h3>
+<p>Hot coffee, cold coffee, cappuccino, latte and more.</p>
+</div>
+
+<div class="menu-item">
+<h3>Continental Food</h3>
+<p>Pasta, sandwiches, burgers and more.</p>
+</div>
+
+<div class="menu-item">
+<h3>Desserts</h3>
+<p>Chocolate desserts, waffles and ice creams.</p>
+</div>
+
+<div class="menu-item">
+<h3>Pastries & Cheesecakes</h3>
+<p>Freshly baked cakes and cheesecakes.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+<img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0">
+<img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81">
+<img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d">
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+
+</div>
+
+<p style="margin-top:15px;">289+ Photos of food, desserts, coffee and cafe ambience</p>
+
+</section>
+
+<!-- REVIEWS -->
+
+<section id="reviews" class="reviews">
+
+<h2>Customer Reviews</h2>
+
+<h3>4.6 ⭐ from 316 reviews</h3>
+
+<div class="review">
+<p>"Loved the ambience, customer service and variety of dishes they offer."</p>
+<strong>– Sajini Chacko</strong>
+</div>
+
+<div class="review">
+<p>"Nice and quality food, worth the visit, polite staff, affordable price."</p>
+<strong>– Rishitha Koppula</strong>
+</div>
+
+<div class="review">
+<p>"The prices are reasonable. We also enjoyed the weekend live music."</p>
+<strong>– Mihir Das</strong>
+</div>
+
+</section>
+
+<!-- LOCATION -->
+
+<section>
+
+<h2>Visit Us</h2>
+
+<p>Uppal Depot, Sri Sai Nagar, Sai Nagar Colony, Hyderabad, Telangana 500098</p>
+
+<iframe
+src="https://maps.google.com/maps?q=uppal%20depot%20hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<p>Phone: +91 91107 97432</p>
+
+<div class="contact-buttons">
+
+<button class="btn primary"
+onclick="window.location.href='tel:+919110797432'">
+Call Now
+</button>
+
+<button class="btn secondary"
+onclick="window.open('https://maps.google.com?q=Uppal+Depot+Hyderabad')">
+Get Directions
+</button>
+
+<button class="btn primary">
+Reserve Table
+</button>
+
+</div>
+
+</section>
+
+<!-- ORDER ONLINE -->
+
+<section>
+
+<h2>Order Online</h2>
+
+<div class="order-buttons">
+
+<a href="#">Order on Zomato</a>
+
+<a href="#">Order on Swiggy</a>
+
+</div>
+
+</section>
+
+<!-- HOURS -->
+
+<section>
+
+<h2>Opening Hours</h2>
+
+<p>Open Daily</p>
+<p>Closes at 12:00 AM</p>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>Cozy Corner Cafe</h3>
+
+<div class="social">
+<a href="#">Facebook</a>
+<a href="#">Instagram</a>
+</div>
+
+<p style="margin-top:10px;">
+© Cozy Corner Cafe
+</p>
+
+</footer>
+
+</body>
+</html>
